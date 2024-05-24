@@ -2,17 +2,17 @@
 UT_Mod_22_Challenge
 
 Instructions
-Rename the Home_Sales_starter_code.ipynb file as Home_Sales.ipynb.
 
-Import the necessary PySpark SQL functions for this assignment.
+Name: UT_Mod_22_Challenge
 
-Read the home_sales_revised.csv data in the starter code into a Spark DataFrame.
+# Description
+module_22_challenge for UT Data Bootcamp. This Project uses PysparkSQL to manage and extra large data sets. 
 
-Create a temporary table called home_sales.
+We read the supporting resource URL from AWS to interpret and then write our create a table to query the date from to answer questions around prices and home sales
 
-Answer the following questions using SparkSQL:
+We answer the following questions:
 
-What is the average price for a four-bedroom house sold for each year? Round off your answer to two decimal places.
+What is the average price for z four-bedroom house sold for each year? Round off your answer to two decimal places.
 
 What is the average price of a home for each year the home was built, that has three bedrooms and three bathrooms? Round off your answer to two decimal places.
 
@@ -20,20 +20,8 @@ What is the average price of a home for each year the home was built, that has t
 
 What is the average price of a home per "view" rating having an average home price greater than or equal to $350,000? Determine the run time for this query, and round off your answer to two decimal places.
 
-Cache your temporary table home_sales.
+# Authors and acknowledgment
+Support for the code in this analysis came from UT of Austin Data Bootcamp Source Material, UT of Austin Data Bootcamp Xpert Learning assistant, and Chatgpt.
 
-Check if your temporary table is cached.
-
-Using the cached data, run the last query that calculates the average price of a home per "view" rating having an average home price greater than or equal to $350,000. Determine the runtime and compare it to uncached runtime.
-
-Partition by the "date_built" field on the formatted parquet home sales data.
-
-Create a temporary table for the parquet data.
-
-Run the last query that calculates the average price of a home per "view" rating having an average home price greater than or equal to $350,000. Determine the runtime and compare it to uncached runtime.
-
-Uncache the home_sales temporary table.
-
-Verify that the home_sales temporary table is uncached using PySpark.
-
-Download your Home_Sales.ipynb file and upload it into your "Home_Sales" GitHub repository.
+# Status
+Partially Complete. Unable to partition and create table useing Parquet due to unresolved issues with libraries and Pyjava44error. 
